@@ -82,7 +82,20 @@
     		<artifactId>aws-java-sdk</artifactId>
     		<version>1.11.534</version>
 		</dependency>
-
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-aws-actuator</artifactId>
+			<version>2.0.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-aws</artifactId>
+			<version>2.0.0.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
