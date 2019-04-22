@@ -78,9 +78,9 @@
 			<version>4.5.6</version>
 		</dependency>
 		<dependency>
-    		<groupId>com.amazonaws</groupId>
-    		<artifactId>aws-java-sdk</artifactId>
-    		<version>1.11.534</version>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.11.534</version>
 		</dependency>
 		<dependency>
 			<groupId>io.micrometer</groupId>
@@ -96,21 +96,26 @@
 			<artifactId>spring-cloud-starter-aws</artifactId>
 			<version>2.0.0.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-aws-context</artifactId>
+			<version>1.0.0.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-		<plugin>
-			<artifactId>maven-compiler-plugin</artifactId>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-				<fork>true</fork>
-				<executable>/usr/bin/javac</executable>
+					<fork>true</fork>
+					<executable>/usr/bin/javac</executable>
 				</configuration>
-		</plugin>
-		<plugin>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-maven-plugin</artifactId>
-		</plugin>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 
